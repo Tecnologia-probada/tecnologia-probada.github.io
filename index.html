@@ -1,8 +1,4 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Tecnología Probada 🦆 Catálogo con precios</title>
 <meta name="description" content="Artículos probados y verificados antes de entregar, con precios en RD$. Delivery en Santo Domingo y envíos a todo el país. Mira lo disponible y pide por WhatsApp.">
 <meta property="og:type" content="website">
@@ -14,19 +10,216 @@
 <meta property="og:image" content="https://tecnologiaprobada.com/og.jpg">
 <meta property="og:image:secure_url" content="https://tecnologiaprobada.com/og.jpg">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="900">
-<meta property="og:image:height" content="900">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Tecnología Probada: patito con lentes de sol">
-<meta name="twitter:card" content="summary">
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F2EEE7;color:#1B1A16;font:16px system-ui,sans-serif;text-align:center;padding:16px}a{color:#2C5B4B;font-weight:600}img{max-width:320px;width:100%;border-radius:16px}</style>
-</head>
-<body>
-<main>
-<img src="og.jpg" alt="Tecnología Probada">
-<h1>Tecnología Probada</h1>
-<p>Artículos probados y verificados antes de entregar, con precios en RD$. Delivery en Santo Domingo y envíos a todo el país.</p>
-<p><a id="go" href="https://claude.ai/artifact/Uw7gnMnVLuxBub9QiqYrzN">Abrir el catálogo</a></p>
-</main>
-<script>location.replace(document.getElementById("go").href)</script>
-</body>
-</html>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="canonical" href="https://tecnologiaprobada.com/"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: banda de marca como el banner de Facebook (crema, tinta, verde bosque, patitos), luego fichas con foto y cómo comprar */
+:root{
+  --bg:#F2EEE7; --surface:#FFFFFF; --ink:#1B1A16; --ink-2:#4B4940; --ink-3:#7E7A6E; --line:#E0DACF;
+  --green:#2C5B4B; --duckbox:#F2EDE7; --green-ink:#FFFFFF; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#1B1A16; --pill-ink:#F2EEE7; --wa:#1F8A4C; --wa-ink:#FFFFFF;
+  --display:"Inter Tight","Arial Black",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15140F; --surface:#1F1E18; --ink:#F2EEE7; --ink-2:#C9C4B8; --ink-3:#958F82; --line:#34322A;
+  --green:#6FB39A; --green-ink:#0B1712; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#F2EEE7; --pill-ink:#1B1A16; --wa:#2DB366; --wa-ink:#06140B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15140F; --surface:#1F1E18; --ink:#F2EEE7; --ink-2:#C9C4B8; --ink-3:#958F82; --line:#34322A;
+  --green:#6FB39A; --green-ink:#0B1712; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#F2EEE7; --pill-ink:#1B1A16; --wa:#2DB366; --wa-ink:#06140B; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:0 56px;display:flex;flex-direction:column;gap:44px}
+header{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;padding-block:32px 0}
+
+.brand{display:flex;flex-direction:column;gap:14px;min-width:0}
+h1{font:800 clamp(44px,8vw,76px)/.95 var(--display);letter-spacing:-.03em;margin:0}
+h1 span{color:var(--green)}
+.lead{font-size:18px;color:var(--ink-2);margin:0;max-width:44ch}
+.pill{align-self:flex-start;background:var(--pill);color:var(--pill-ink);border-radius:999px;padding:7px 14px;font:500 14px var(--body)}
+.patos-box{justify-self:stretch;background:var(--duckbox);border-radius:20px;display:flex;align-items:flex-end;justify-content:center;padding:24px 18px 0;min-height:240px;overflow:hidden}
+.patos{width:100%;max-width:560px;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15px var(--body);border-radius:10px;padding:11px 16px;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface);cursor:pointer}
+.btn:hover{border-color:var(--ink-3)}
+.btn.wa{background:var(--wa);color:var(--wa-ink);border-color:var(--wa)}
+.btn.big{font-size:17px;padding:14px 20px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--duck);outline-offset:2px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.num{font:500 14px var(--mono);color:var(--ink-2);user-select:all}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:8px}
+h2{font:800 30px/1.05 var(--display);margin:0;letter-spacing:-.02em;text-wrap:balance}
+.sub{color:var(--ink-3);margin:0;font-size:15px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.ph{position:relative;aspect-ratio:1/1;background:#fff;max-width:100%}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .ref{position:absolute;left:10px;bottom:10px;background:rgba(27,26,22,.72);color:#fff;font:500 11px var(--mono);padding:3px 8px;border-radius:6px}
+.state{position:absolute;left:10px;top:10px;font:600 12px var(--body);padding:4px 10px;border-radius:999px;background:var(--duck);color:var(--duck-ink)}
+.state.now{background:var(--green);color:var(--green-ink)}
+.body{padding:16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font:700 19px/1.2 var(--display);margin:0;letter-spacing:-.01em}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font:500 12px var(--body);border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--ink-2)}
+.tag.cond{border-color:var(--green);color:var(--green)}
+.price{font:500 22px var(--mono);font-variant-numeric:tabular-nums}
+.card ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:14px}
+.ship{font-size:13px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:10px}
+.actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+.actions .btn{flex:1 1 auto;font-size:14px;padding:10px 12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{border-top:3px solid var(--green);padding-top:12px;display:flex;flex-direction:column;gap:4px}
+.step b{font:700 17px var(--display)}
+.step span{color:var(--ink-2);font-size:15px}
+footer{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;color:var(--ink-3);font-size:14px}
+.btn.add[aria-pressed="true"]{background:var(--green);color:var(--green-ink);border-color:var(--green)}
+.cart{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--pill);color:var(--pill-ink);box-shadow:0 -6px 24px rgba(0,0,0,.18)}
+.cart-in{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+.cart-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.cart-sum{font:600 15px var(--body)}
+.cart-sum b{font:500 16px var(--mono)}
+.cart .btn{border-color:transparent}
+.cart .link{background:none;border:0;color:var(--pill-ink);text-decoration:underline;font:500 14px var(--body);cursor:pointer;padding:6px}
+.cart-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:40vh;overflow:auto}
+.cart-list li{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:14px;border-top:1px solid rgba(127,127,127,.35);padding-top:6px}
+.cart-list button{background:none;border:1px solid currentColor;color:inherit;border-radius:8px;padding:2px 8px;cursor:pointer;font:500 13px var(--body)}
+body.has-cart .wrap{padding-bottom:120px}
+.empty{color:var(--ink-3);padding:18px;border:1px dashed var(--line);border-radius:12px}
+.addwrap{display:flex;gap:6px;flex:1 1 100%}.addwrap .add{flex:1}.btn.minus{flex:0 0 auto;padding:10px 14px;font-size:18px;line-height:1}.btn.add[disabled]{opacity:1;cursor:default}
+@media (max-width:700px){
+  header{grid-template-columns:1fr auto;column-gap:12px;row-gap:14px;padding-top:20px}
+  .brand{display:contents}
+  .brand>*{grid-column:1/-1}
+  h1{grid-column:1;grid-row:1;align-self:center;font-size:clamp(38px,11vw,56px)}
+  .patos-box{grid-column:2;grid-row:1;align-self:center;width:clamp(92px,28vw,130px);min-height:0;padding:6px 6px 0;border-radius:14px}
+  .pill{justify-self:start}
+}
+.viewbar{display:none}
+@media (max-width:700px){
+  .viewbar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:-28px;font:500 14px var(--body);color:var(--ink-3)}
+  .viewbar .seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+  .viewbar button{border:0;background:none;color:var(--ink-2);font:600 14px var(--body);padding:8px 12px;cursor:pointer}
+  .viewbar button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+  body.compact .grid{grid-template-columns:1fr 1fr;gap:10px}
+  body.compact .card{border-radius:12px}
+  body.compact .card ul,body.compact .card .ship,body.compact .ph .ref{display:none}
+  body.compact .body{padding:10px;gap:6px}
+  body.compact .card h3{font-size:15px}
+  body.compact .price{font-size:16px}
+  body.compact .tag{font-size:11px;padding:1px 7px}
+  body.compact .state{font-size:10px;padding:3px 7px;left:6px;top:6px;right:6px;width:fit-content;max-width:calc(100% - 12px);white-space:normal;line-height:1.25}
+  body.compact .actions{gap:6px}
+  body.compact .actions .btn{flex:1 1 100%;font-size:13px;padding:8px 8px}
+  body.compact .btn.minus{padding:8px 10px;font-size:16px}
+  body.compact .addwrap .add{font-size:12px}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Tecnología<br><span>probada.</span></h1>
+      <p class="lead">Te la entregamos funcionando, sin sorpresas.</p>
+      <span class="pill">Envíos por courier a todo el país · Delivery en Santo Domingo</span>
+      <div class="cta">
+        <a class="btn wa big" id="wa-top" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+        <span class="num">+1 (352) 354-9663</span>
+      </div>
+      <div class="cta">
+        <a class="btn" href="https://whatsapp.com/channel/0029VbEJIC6BvvsWW9Md3t2O" target="_blank" rel="noopener">🦆 Sigue el canal: lo nuevo llega aquí primero</a>
+      </div>
+    </div>
+    <div class="patos-box"><picture><source media="(max-width:700px)" srcset="img/patos.jpg"><img class="patos" src="img/patos-hd.jpg" alt="Tres patitos amarillos con lentes de sol, la mascota de la tienda"></picture></div>
+  </header>
+
+  <div class="viewbar" role="group" aria-label="Vista"><span>Vista</span><span class="seg"><button type="button" data-view="compact">▦ Más productos</button><button type="button" data-view="big">▢ Grande</button></span></div>
+
+  <section aria-labelledby="h-disp" id="sec-disp">
+    <div class="sec-head"><h2 id="h-disp">Disponibles ahora</h2><p class="sub">Todo se prueba antes de entregar.</p></div>
+    <div class="grid" id="grid-disp"></div>
+  </section>
+
+  <section aria-labelledby="h-camino" id="sec-camino">
+    <div class="sec-head"><h2 id="h-camino">Por llegar</h2><p class="sub">Reserva el tuyo hasta que llegue.</p></div>
+    <div class="grid" id="grid-camino"></div>
+  </section>
+
+  <section aria-labelledby="h-como">
+    <h2 id="h-como">Cómo compras</h2>
+    <div class="steps">
+      <div class="step"><b>Escríbeme</b><span>Por WhatsApp, con el artículo que quieres. Si lo pides, te mando un video funcionando.</span></div>
+      <div class="step"><b>Recíbelo</b><span>En Santo Domingo, punto de encuentro o delivery (el costo depende de la zona). Al interior, por courier.</span></div>
+      <div class="step"><b>Paga</b><span>Efectivo o transferencia al recibir en Santo Domingo. Envíos al interior: pago 100% antes de despachar.</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Precios en pesos dominicanos, sujetos a disponibilidad. Actualizado el <span id="upd"></span>.</span>
+    <span class="cta"><a class="btn" href="https://whatsapp.com/channel/0029VbEJIC6BvvsWW9Md3t2O" target="_blank" rel="noopener">Canal de WhatsApp</a><a class="btn wa" id="wa-bottom" target="_blank" rel="noopener">WhatsApp</a></span>
+  </footer>
+</div>
+
+<div class="cart" id="cart" hidden aria-live="polite"><div class="cart-in">
+  <ul class="cart-list" id="cart-list" hidden></ul>
+  <div class="cart-row"><span class="cart-sum" id="cart-sum"></span><span><button class="link" id="cart-toggle" type="button">Ver carrito</button> <a class="btn wa" id="cart-send" target="_blank" rel="noopener">Pedir por WhatsApp</a></span></div>
+</div></div>
+
+<script id="catalog-data" type="application/json">
+{"actualizado": "29 de septiembre de 2026", "whatsapp": "13523549663", "tecnologia": [{"id": "pencil-2", "t": "Apple Pencil 2", "cond": "Usado · excelente", "p": 5000, "n": 2, "estado": "camino", "eta": "llega entre el 3 y el 6 de oct", "foto": "img/pencil-2.jpg", "ref": true, "puntos": ["Se empareja y carga pegándolo magnéticamente al iPad", "Doble toque para cambiar de herramienta", "Precisión total y sensibilidad a la presión para dibujar y tomar notas"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}, {"id": "bose-qc45", "t": "Bose QuietComfort 45", "cond": "Usado · buen estado", "p": 13500, "desde": true, "n": 2, "estado": "camino", "eta": "llega entre el 3 y el 6 de oct", "foto": "img/bose-qc45.jpg", "ref": true, "puntos": ["Cancelación de ruido Bose + modo Aware para escuchar el entorno", "Hasta 24 horas de batería · carga rápida USB-C (15 min = 3 horas)", "Súper cómodos y livianos para usar todo el día"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}, {"id": "bose-qc-ultra", "t": "Bose QuietComfort Ultra", "cond": "Usado · excelente", "p": 16000, "n": 1, "estado": "camino", "eta": "llega entre el 3 y el 6 de oct", "foto": "img/bose-qc-ultra.jpg", "ref": true, "puntos": ["La mejor cancelación de ruido de Bose, se ajusta sola a tu oído", "Audio inmersivo espacial: el sonido se siente alrededor tuyo", "Hasta 24 horas de batería · carga USB-C"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}, {"id": "bose-qc-ultra-caja-abierta", "t": "Bose QuietComfort Ultra", "cond": "Nuevo · caja abierta", "p": 16000, "n": 1, "estado": "camino", "eta": "llega entre el 5 y el 8 de oct", "foto": "img/bose-qc-ultra.jpg", "ref": true, "puntos": ["La cancelación de ruido más potente de Bose, con modos Silencio y Consciente", "Audio inmersivo (sonido espacial) para música y películas", "Hasta 24 horas de batería · 15 min de carga = 2.5 h de uso"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}, {"id": "sony-xm5", "t": "Sony WH-1000XM5", "cond": "Usado · buen estado", "p": 12500, "n": 1, "estado": "camino", "eta": "llega entre el 3 y el 6 de oct", "foto": "img/sony-xm5.jpg", "ref": true, "puntos": ["La mejor cancelación de ruido de Sony (8 micrófonos)", "Hasta 30 horas de batería · carga rápida USB-C (3 min = 3 horas)", "Llamadas nítidas y conexión a 2 dispositivos a la vez"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}, {"id": "osmo-pocket-3", "t": "DJI Osmo Pocket 3", "cond": "Usado · excelente", "p": 26000, "n": 2, "estado": "camino", "eta": "llega entre el 16 y el 23 de oct", "foto": "img/osmo-pocket-3.jpg", "ref": true, "puntos": ["Sensor de 1\" · video 4K hasta 120 fps, excelente de noche", "Estabilizador mecánico de 3 ejes: tomas suaves caminando", "Pantalla OLED de 2\" giratoria: vertical para TikTok/Reels u horizontal para YouTube"], "entrega": "Envío a todo el país · Delivery en SD (costo según zona) · Punto de encuentro"}], "otros": [{"id": "vespa", "t": "Vespa SXL 150 · 2021", "cond": "Usada · como nueva", "p": 185000, "estado": "disponible", "foto": "img/vespa.jpg", "fb": "https://www.facebook.com/marketplace/item/1255830349954195/", "puntos": ["Solo 9,500 km", "Negro mate, sin rayones ni caídas", "Documentos al día, lista para traspaso"], "entrega": "Se ve y se prueba con cita en el Distrito Nacional"}, {"id": "mazda", "t": "Mazda CX-5 Sport AWD · 2021", "cond": "Usada · excelente", "p": 1350000, "estado": "disponible", "foto": "img/mazda.jpg", "fb": "https://www.facebook.com/marketplace/item/1792580058832061/", "puntos": ["Motor 2.5L SkyActiv-G, tracción AWD", "Recién importada, servicio al día", "Automática de 6 velocidades"], "entrega": "Se ve con cita en Santo Domingo"}, {"id": "maquina", "t": "Máquina expendedora combo", "cond": "Usada · como nueva", "p": 350000, "estado": "disponible", "foto": "img/maquina.jpg", "fb": "https://www.facebook.com/marketplace/item/1495888758886705/", "puntos": ["Snacks y bebidas", "Acepta tarjeta, billetes y monedas; da cambio", "Operando desde febrero"], "entrega": "Se ve funcionando en Sabana Perdida · Flete por cuenta del comprador"}]}
+</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById("catalog-data").textContent);
+function money(n){return "RD$"+Number(n).toLocaleString("en-US")}
+function wa(msg){return "https://wa.me/"+D.whatsapp+"?text="+encodeURIComponent(msg)}
+function esc(v){return String(v).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function card(x){var now=x.estado==="disponible";
+ var q=now?"Hola, quiero comprar: "+x.t+" ("+money(x.p)+"). ¿Cuándo lo puedo ver?":"Hola, quiero comprar: "+x.t+" ("+money(x.p)+"), que "+x.eta+".";
+ return '<article class="card"><div class="ph">'+(x.foto?'<img src="'+esc(x.foto)+'" alt="'+esc(x.t)+'" loading="lazy">':'')+'<span class="state'+(now?' now':'')+'">'+(now?'Disponible':'En camino · '+esc(x.eta))+'</span>'+(x.ref?'<span class="ref">Foto de referencia</span>':'')+'</div>'+
+ '<div class="body"><h3>'+esc(x.t)+'</h3><div class="meta"><span class="tag cond">'+esc(x.cond)+'</span>'+(x.n>1?'<span class="tag">'+x.n+' unidades</span>':'')+'</div>'+
+ '<div class="price">'+(x.desde?'<span style="font-size:13px;color:var(--ink-3)">desde </span>':'')+money(x.p)+'</div>'+
+ '<ul>'+(x.puntos||[]).map(function(i){return '<li>'+esc(i)+'</li>'}).join("")+'</ul>'+
+ '<div class="ship">'+esc(x.entrega)+'</div>'+
+ '<div class="actions">'+'<span class="addwrap"><button class="btn minus" type="button" data-minus="'+esc(x.id)+'" aria-label="Quitar uno" hidden>−</button><button class="btn add" type="button" data-add="'+esc(x.id)+'" aria-pressed="false">Agregar al carrito</button></span><a class="btn wa" data-buy="'+esc(x.id)+'" href="'+wa(q)+'" target="_blank" rel="noopener">Comprar este</a>'+(x.fb?'<a class="btn" href="'+esc(x.fb)+'" target="_blank" rel="noopener">Más fotos</a>':'')+'</div></div></article>'}
+var T=D.tecnologia||[],O=D.otros||[];
+var ALLL=T.concat(O),DISP=ALLL.filter(function(x){return x.estado==="disponible"}),CAM=T.filter(function(x){return x.estado!=="disponible"});
+DISP.sort(function(a,b){return (O.indexOf(a)>=0)-(O.indexOf(b)>=0)});
+if(DISP.length)document.getElementById("grid-disp").innerHTML=DISP.map(card).join("");else document.getElementById("sec-disp").hidden=true;
+document.getElementById("grid-camino").innerHTML=CAM.length?CAM.map(card).join(""):'<div class="empty">Pronto llegan equipos nuevos. Escríbeme para saber qué viene.</div>';
+if(!CAM.length&&DISP.length)document.getElementById("sec-camino").hidden=true;
+document.getElementById("upd").textContent=D.actualizado;
+var ALL={};T.concat(O).forEach(function(x){ALL[x.id]=x});
+var cart=[];try{cart=JSON.parse(localStorage.getItem("cart2")||"[]").filter(function(c){return c&&ALL[c.id]}).map(function(c){c.q=Math.max(1,Math.min(c.q||1,ALL[c.id].n||1));return c})}catch(e){cart=[]}
+function idx(id){for(var k=0;k<cart.length;k++)if(cart[k].id===id)return k;return -1}
+function qsel(id){var i=idx(id);return i>=0?cart[i].q:1}function maxn(id){return ALL[id].n||1}
+function save(){try{localStorage.setItem("cart2",JSON.stringify(cart))}catch(e){}}
+function renderCart(){var box=document.getElementById("cart");document.querySelectorAll("[data-add]").forEach(function(b){var id=b.dataset.add,i=idx(id),q=i>=0?cart[i].q:0,m=maxn(id);b.setAttribute("aria-pressed",q>0);b.disabled=q>=m;b.textContent=q===0?"Agregar al carrito":(q>=m?"En el carrito ✓ ("+q+")":"+ Agregar otro ("+q+" en carrito)");var mn=document.querySelector('[data-minus="'+id+'"]');if(mn)mn.hidden=q===0;buyHref(id)});
+ if(!cart.length){box.hidden=true;document.body.classList.remove("has-cart");return}
+ box.hidden=false;document.body.classList.add("has-cart");var tot=0,units=0;var lines=cart.map(function(c,k){var x=ALL[c.id];tot+=Number(x.p)*c.q;units+=c.q;return (k+1)+". "+(c.q>1?c.q+" × ":"")+x.t+" · "+x.cond+" · "+money(x.p)+(c.q>1?" c/u = "+money(x.p*c.q):"")+(x.estado==="camino"?" (en camino, "+x.eta+")":"")});
+ document.getElementById("cart-sum").innerHTML=units+" artículo"+(units>1?"s":"")+" · <b>"+money(tot)+"</b>";
+ document.getElementById("cart-list").innerHTML=cart.map(function(c){var x=ALL[c.id];return '<li><span>'+(c.q>1?c.q+' × ':'')+esc(x.t)+' · '+money(x.p*c.q)+'</span><button type="button" data-rm="'+esc(c.id)+'">Quitar</button></li>'}).join("");
+ document.getElementById("cart-send").href=wa("Hola, quiero comprar estos artículos de tu catálogo:\n"+lines.join("\n")+"\nTotal: "+money(tot)+"\n¿Cómo coordinamos la entrega?")}
+function buyHref(id){var x=ALL[id],q=qsel(id),a=document.querySelector('[data-buy="'+id+'"]');if(!a)return;var now=x.estado==="disponible";a.href=wa("Hola, quiero comprar: "+(q>1?q+" × ":"")+x.t+" ("+money(x.p)+(q>1?" c/u, total "+money(x.p*q):"")+")"+(now?". ¿Cuándo lo puedo ver?":", que "+x.eta+"."))}
+document.addEventListener("click",function(ev){var a=ev.target.closest("[data-add]");if(a){var id=a.dataset.add,i=idx(id);if(i>=0){if(cart[i].q<maxn(id))cart[i].q++}else cart.push({id:id,q:1});save();renderCart();return}
+ var mi=ev.target.closest("[data-minus]");if(mi){var j=idx(mi.dataset.minus);if(j>=0){cart[j].q--;if(cart[j].q<=0)cart.splice(j,1)}save();renderCart();return}
+ var r=ev.target.closest("[data-rm]");if(r){cart.splice(idx(r.dataset.rm),1);save();renderCart();return}
+ if(ev.target.id==="cart-toggle"){var l=document.getElementById("cart-list");l.hidden=!l.hidden;ev.target.textContent=l.hidden?"Ver carrito":"Ocultar"}});
+function setView(v){document.body.classList.toggle("compact",v!=="big");document.querySelectorAll("[data-view]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.view===(v==="big"?"big":"compact"))});try{localStorage.setItem("vista",v)}catch(e){}}
+var v0="compact";try{v0=localStorage.getItem("vista")||"compact"}catch(e){}setView(v0);
+document.addEventListener("click",function(ev){var b=ev.target.closest("[data-view]");if(b)setView(b.dataset.view)});
+renderCart();
+var g=wa("Hola, vi tu catálogo. Me interesa…");
+document.getElementById("wa-top").href=g;document.getElementById("wa-bottom").href=g;
+})();
+</script>
+
+</body></html>
