@@ -1,12 +1,12 @@
 <!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Tecnología Probada 🦆 Catálogo con precios</title>
-<meta name="description" content="Artículos probados al recibirlos (unboxing y pruebas), con precios en RD$. Delivery en Santo Domingo y envíos a todo el país. Mira lo disponible y pide por WhatsApp.">
+<meta name="description" content="Artículos probados antes de recibir, con precios en RD$. Delivery en Santo Domingo y envíos a todo el país. Mira lo disponible y pide por WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tecnologiaprobada.com/">
 <meta property="og:site_name" content="Tecnología Probada">
 <meta property="og:locale" content="es_DO">
 <meta property="og:title" content="Tecnología Probada 🦆 Catálogo con precios">
-<meta property="og:description" content="Artículos probados al recibirlos (unboxing y pruebas), con precios en RD$. Delivery en Santo Domingo y envíos a todo el país. Mira lo disponible y pide por WhatsApp.">
+<meta property="og:description" content="Artículos probados antes de recibir, con precios en RD$. Delivery en Santo Domingo y envíos a todo el país. Mira lo disponible y pide por WhatsApp.">
 <meta property="og:image" content="https://tecnologiaprobada.com/og.jpg?v=2">
 <meta property="og:image:secure_url" content="https://tecnologiaprobada.com/og.jpg?v=2">
 <meta property="og:image:type" content="image/jpeg">
@@ -39,8 +39,12 @@
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:0 56px;display:flex;flex-direction:column;gap:44px}
-header{display:flex;flex-direction:column;gap:18px;padding-block:24px 0}
-.banner{display:block;max-width:900px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line)}.banner img{display:block;width:100%;height:auto}
+header{display:flex;flex-direction:column;align-items:center;gap:18px;padding-block:24px 0;text-align:center}
+header .banner{width:100%;margin:0 auto}
+header .brand{align-items:center;width:100%}
+header .cta,header .soc-row{justify-content:center}
+header .redes{align-items:center}
+.banner{display:block;max-width:960px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line)}.banner img{display:block;width:100%;height:auto}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 .brand{display:flex;flex-direction:column;gap:14px;min-width:0}
@@ -139,7 +143,7 @@ body.has-cart .wrap{padding-bottom:120px}
   <div class="viewbar" role="group" aria-label="Vista"><span>Vista</span><span class="seg"><button type="button" data-view="compact">▦ Más productos</button><button type="button" data-view="big">▢ Grande</button></span></div>
 
   <section aria-labelledby="h-disp" id="sec-disp">
-    <div class="sec-head"><h2 id="h-disp">Disponibles ahora</h2><p class="sub">Todo se prueba al recibirlo: unboxing y pruebas antes de publicarlo.</p></div>
+    <div class="sec-head"><h2 id="h-disp">Disponibles ahora</h2><p class="sub">Prueba antes de recibir.</p></div>
     <div class="grid" id="grid-disp"></div>
   </section>
 
