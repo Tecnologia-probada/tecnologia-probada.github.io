@@ -24,18 +24,12 @@
 <style>
 /* Layout: banda de marca como el banner de Facebook (crema, tinta, verde bosque, patitos), luego fichas con foto y cómo comprar */
 :root{
-  --bg:#F2EEE7; --surface:#FFFFFF; --ink:#1B1A16; --ink-2:#4B4940; --ink-3:#7E7A6E; --line:#E0DACF;
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#1B1A16; --ink-2:#4B4940; --ink-3:#7E7A6E; --line:#E0DACF;
   --green:#2C5B4B; --duckbox:#F2EDE7; --green-ink:#FFFFFF; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#1B1A16; --pill-ink:#F2EEE7; --wa:#1F8A4C; --wa-ink:#FFFFFF;
   --display:"Inter Tight","Arial Black",system-ui,sans-serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#15140F; --surface:#1F1E18; --ink:#F2EEE7; --ink-2:#C9C4B8; --ink-3:#958F82; --line:#34322A;
-  --green:#6FB39A; --green-ink:#0B1712; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#F2EEE7; --pill-ink:#1B1A16; --wa:#2DB366; --wa-ink:#06140B; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#15140F; --surface:#1F1E18; --ink:#F2EEE7; --ink-2:#C9C4B8; --ink-3:#958F82; --line:#34322A;
-  --green:#6FB39A; --green-ink:#0B1712; --duck:#FFD83A; --duck-ink:#1B1A16; --pill:#F2EEE7; --pill-ink:#1B1A16; --wa:#2DB366; --wa-ink:#06140B; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:0 56px;display:flex;flex-direction:column;gap:44px}
@@ -44,7 +38,7 @@ header .banner{width:100%;margin:0 auto}
 header .brand{align-items:center;width:100%}
 header .cta,header .soc-row{justify-content:center}
 header .redes{align-items:center}
-.banner{display:block;max-width:960px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line)}.banner img{display:block;width:100%;height:auto}
+.banner{display:block;max-width:960px;background:#fff;overflow:hidden}.banner img{display:block;width:100%;height:auto}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 .brand{display:flex;flex-direction:column;gap:14px;min-width:0}
@@ -66,7 +60,7 @@ section{display:flex;flex-direction:column;gap:16px}
 h2{font:800 30px/1.05 var(--display);margin:0;letter-spacing:-.02em;text-wrap:balance}
 .sub{color:var(--ink-3);margin:0;font-size:15px;max-width:60ch}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);box-shadow:0 1px 3px rgba(27,26,22,.06);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
 .ph{position:relative;aspect-ratio:1/1;background:#fff;max-width:100%}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
 .ph .ref{position:absolute;left:10px;bottom:10px;background:rgba(27,26,22,.72);color:#fff;font:500 11px var(--mono);padding:3px 8px;border-radius:6px}
@@ -104,7 +98,6 @@ body.has-cart .wrap{padding-bottom:120px}
 .addwrap{display:flex;gap:6px;flex:1 1 100%}.addwrap .add{flex:1}.btn.minus{flex:0 0 auto;padding:10px 14px;font-size:18px;line-height:1}.btn.add[disabled]{opacity:1;cursor:default}
 @media (max-width:700px){
   header{padding-top:12px;gap:14px}
-  .banner{border-radius:12px}
 }
 .viewbar{display:none}
 @media (max-width:700px){
