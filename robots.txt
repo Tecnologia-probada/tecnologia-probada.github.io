@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /resenas/
-Disallow: /paquetes/
-Disallow: /marca/
+Allow: /
