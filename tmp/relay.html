@@ -6,5 +6,5 @@ addEventListener('message', async e => {
     e.source.postMessage({op:'blob', blob:b}, e.origin);
   } catch (err) { e.source.postMessage({op:'err', err:String(err)}, e.origin); }
 });
-parent.postMessage({op:'ready'}, '*');
+(opener||parent).postMessage({op:'ready'}, '*');
 </script>
